@@ -117,13 +117,13 @@ function Homepage() {
 
 
     <Base>
-      <Row xs={1} sm={1} md={1} lg={1} style={{ textAlign: "center" }}   >
+      <Row xs={1} sm={1} md={1} lg={1} style={{ textAlign: "center" ,width:"100%"}}   >
         <Col> <Form style={{
           display: "grid", placeItems: "center",
           margin: "20px", borderRadius: "10px"
         }}>
           <Form.Label style={{ fontWeight: 'bolder' }}>Post Your Url here</Form.Label>
-          <Form.Control value={posturl} style={{ width: "50%" }} type='text'
+          <Form.Control value={posturl} style={{ width: "80%" }} type='text'
             onChange={(e) => setPosturl(e.target.value)} />
         </Form></Col>
         <Col><div style={{ color: "crimson", margin: "5px" }}>{error}</div></Col>

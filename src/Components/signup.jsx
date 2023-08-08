@@ -89,11 +89,11 @@ function Signup() {
 
 
          <Row sm={1} md={1} lg={1}
-            style={{ textAlign: 'center', }}>
+            style={{ textAlign: 'center',width:"100%" }}>
             <Form onSubmit={handleSubmit}
                style={{ display: "grid", placeItems: "center", marginTop: "70px" }}
             >
-               <Col style={{ textAlign: "center", width: '30%', margin: "7px" }} variant="success"  >
+               <Col style={{ textAlign: "center", width: '100%', margin: "7px" }} variant="success"  >
 
                   <TextField id="filled-basic"
                      label="Name" variant="filled" type="text" placeholder="Your name" style={{
@@ -107,10 +107,10 @@ function Signup() {
                   />
 
                </Col>
-               <Col style={{ color: 'crimson', textAlign: "center", width: '30%', margin: "1px" }}>
+               <Col style={{ color: 'crimson', textAlign: "center", width: '100%', margin: "1px" }}>
                   {touched.name ? errors.name : ""}</Col>
 
-               <Col style={{ textAlign: "center", width: '30%', margin: "7px" }} variant="success" >
+               <Col style={{ textAlign: "center", width: '100%', margin: "7px" }} variant="success" >
 
                   <TextField id="filled-basic"
                      label="Email" variant="filled"
@@ -125,10 +125,10 @@ function Signup() {
                   />
 
                </Col>
-               <Col style={{ color: 'crimson', textAlign: "center", width: '30%', margin: "1px", }}>
+               <Col style={{ color: 'crimson', textAlign: "center", width: '100%', margin: "1px", }}>
                   {touched.email ? errors.email : ""}</Col>
 
-               <Col style={{ textAlign: "center", width: '30%', margin: "7px" }} variant="success" >
+               <Col style={{ textAlign: "center", width: '100%', margin: "7px" }} variant="success" >
 
                   <TextField id="filled-basic"
                      label="Contact" variant="filled" type="number" placeholder="Enter phone No"
@@ -141,10 +141,10 @@ function Signup() {
                   />
 
                </Col>
-               <Col style={{ color: 'crimson', textAlign: "center", width: '30%', margin: "1px" }}>
+               <Col style={{ color: 'crimson', textAlign: "center", width: '100%', margin: "1px" }}>
                   {touched.contact ? errors.contact : ""}</Col>
 
-               <Col style={{ textAlign: "center", width: '30%', margin: "7px" }} variant="success"  >
+               <Col style={{ textAlign: "center", width: '100%', margin: "7px" }} variant="success"  >
 
                   <TextField id="filled-basic"
                      label="password" variant="filled" type="password" placeholder="Password"
@@ -155,10 +155,10 @@ function Signup() {
                      name="password"
                   />
 
-               </Col> <Col style={{ color: 'crimson', textAlign: "center", width: '30%', margin: "1px" }}>
+               </Col> <Col style={{ color: 'crimson', textAlign: "center", width: '100%', margin: "1px" }}>
                   {touched.password ? errors.password : ""}</Col>
 
-               {error ? <Col style={{ textAlign: "center", width: '30%', margin: "10px" }}
+               {error ? <Col style={{ textAlign: "center", width: '100%', margin: "10px" }}
                >{error}</Col> : ""}
 
                <Col>

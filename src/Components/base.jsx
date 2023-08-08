@@ -1,9 +1,8 @@
 import React  from 'react'
-import {children} from 'react'
 import Button from 'react-bootstrap/Button';
 
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import {Row,Nav} from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 
 import { useHistory } from 'react-router-dom';
@@ -23,12 +22,15 @@ function Base({ children }) {
           <Container fluid>
             <Navbar.Brand href="/" style={{ marginLeft: "20px", fontWeight: "bolder" }}>SHORTY</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
-
-            <span style={{ marginRight: "20px" }}><Button variant='success' size='md'
-              onClick={handleClick} >Logout</Button></span>
-
-
+            
+            <Navbar.Collapse id="navbarScroll">
+            <Button variant='success' size='md' 
+            style={{ marginLeft: "80%" }}
+              onClick={handleClick} >Logout</Button>
+        </Navbar.Collapse>
+        
           </Container>
+         
         </Navbar>
       </Row>
       <Row>{children}</Row>
